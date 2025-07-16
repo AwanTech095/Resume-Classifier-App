@@ -25,30 +25,33 @@ if st.button("🔍 Classify Resume"):
             X_input = vectorizer.transform([resume_text])
             predicted_category = model.predict(X_input)[0]
 
-      # --- Result Display ---
-st.markdown(
-    f"""
-    <div style='
-        background: linear-gradient(to right, #4B8BBE, #306998);
-        padding: 15px;
-        border-radius: 10px;
-        text-align: center;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    '>
-        <h4 style='color: white;'>🎯 Predicted Category: {predicted_category}</h4>
-    </div>
-    """,
-    unsafe_allow_html=True
-)
-
+        # --- Result Display (Updated styling) ---
+        st.markdown(
+            f"""
+            <div style='
+                background-color: #1e1e1e;
+                padding: 20px;
+                border-radius: 10px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+                margin-top: 20px;
+            '>
+                <h4 style='color: #FFFFFF; text-align: center;'>🎯 Predicted Resume: <b>{predicted_category}</b></h4>
+            </div>
+            """,
+            unsafe_allow_html=True
+        )
 
 # --- Sidebar ---
-st.sidebar.title("**About**")
-st.sidebar.info("This web app uses a machine learning model (TF-IDF + Logistic Regression) to classify resumes into professional categories like:\n\n- Data Science\n- HR\n- Web Designing\n- DevOps\n- Java Developer\n- And many more!")
+st.sidebar.title("📘 About")
+st.sidebar.info(
+    "This web app uses a machine learning model (TF-IDF + Logistic Regression) to classify resumes into job categories like:\n\n"
+    "- Data Science\n- HR\n- Web Designing\n- DevOps\n- Java Developer\n- and more!"
+)
 
-st.sidebar.title("**Tech Used**")
-st.sidebar.success("Python · Scikit-learn · Pandas · Numpy · NLTK · Spacy · Streamlit")
+st.sidebar.title("🛠 Tech Stack")
+st.sidebar.success("Python · Scikit-learn · Pandas · Numpy · NLTK · SpaCy · Streamlit")
 
 st.sidebar.markdown("---")
 st.sidebar.markdown("🧑‍💻 Created by **Rabbi Awan**")
+
 
