@@ -25,11 +25,22 @@ if st.button("🔍 Classify Resume"):
             X_input = vectorizer.transform([resume_text])
             predicted_category = model.predict(X_input)[0]
 
-        # --- Result Display ---
-        st.markdown(
-            f"<div style='background-color: #D1F2EB; padding: 15px; border-radius: 10px;'><h4 style='color: #117864;'>🎯 Predicted Category: {predicted_category}</h4></div>",
-            unsafe_allow_html=True
-        )
+      # --- Result Display ---
+st.markdown(
+    f"""
+    <div style='
+        background: linear-gradient(to right, #4B8BBE, #306998);
+        padding: 15px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    '>
+        <h4 style='color: white;'>🎯 Predicted Category: {predicted_category}</h4>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 
 # --- Sidebar ---
 st.sidebar.title("**About**")
