@@ -1,10 +1,10 @@
-# 🧠 Resume Classifier App
+# Resume Classifier App
 
 This is a Machine Learning-powered web application built with **Streamlit** that classifies resumes into different job roles such as `Data Science`, `Web Designing`, `HR`, and more based on their content.
 
 ---
 
-## 📌 Features
+## Features
 
 - Cleaned and preprocessed real-world resume data
 - TF-IDF vectorization with unigrams and bigrams
@@ -14,7 +14,7 @@ This is a Machine Learning-powered web application built with **Streamlit** that
 
 ---
 
-## 🔍 How It Works
+## How It Works
 
 1. User pastes a resume.
 2. App vectorizes it using the trained `TF-IDF` model.
@@ -23,7 +23,7 @@ This is a Machine Learning-powered web application built with **Streamlit** that
 
 ---
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - Python
 - Pandas, NLTK, spaCy
@@ -33,7 +33,7 @@ This is a Machine Learning-powered web application built with **Streamlit** that
 
 ---
 
-## 🚀 Run Locally
+## Run Locally
 
 ```bash
 git clone https://github.com/AwanTech095/Resume-Classifier-App.git
