@@ -45,7 +45,7 @@ if st.button("🔍 Classify Resume"):
 st.sidebar.title("📘 About")
 st.sidebar.info(
     "This web app uses a machine learning model (TF-IDF + Logistic Regression) to classify resumes into job categories like:\n\n"
-    "- Data Science\n- HR\n- Web Designing\n- DevOps\n- Java Developer\n- and more!"
+    "- Data Science\n- HR\n- Web Designing\n- DevOps\n- Java Developer\n and more!"
 )
 
 st.sidebar.title("🛠 Tech Stack")
