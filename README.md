@@ -1,11 +1,9 @@
 # Resume Classifier App
-
 This is a Machine Learning-powered web application built with **Streamlit** that classifies resumes into different job roles such as `Data Science`, `Web Designing`, `HR`, and more based on their content.
 
 ---
 
 ## Features
-
 - Cleaned and preprocessed real-world resume data
 - TF-IDF vectorization with unigrams and bigrams
 - Multi-class classification using Logistic Regression
@@ -15,7 +13,6 @@ This is a Machine Learning-powered web application built with **Streamlit** that
 ---
 
 ## How It Works
-
 1. User pastes a resume.
 2. App vectorizes it using the trained `TF-IDF` model.
 3. Model predicts the job category.
@@ -24,7 +21,6 @@ This is a Machine Learning-powered web application built with **Streamlit** that
 ---
 
 ## Tech Stack
-
 - Python
 - Pandas, NLTK, spaCy
 - Scikit-learn (Logistic Regression)
